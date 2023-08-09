@@ -166,3 +166,18 @@ seaTitle.addEventListener("click", function () {
     seaBtn.innerHTML = `+`;
   }
 });
+
+let ramenTitle = document.querySelector(".ramenTitle");
+let ramenPicAll = document.querySelector(".ramenPicAll");
+let ramenTrue = false;
+let ramenBtn = document.querySelector(".ramenTitle span");
+ramenTitle.addEventListener("click", function () {
+  ramenTrue = !ramenTrue;
+  if (ramenTrue) {
+    ramenPicAll.style.display = "block";
+    ramenBtn.innerHTML = `-`;
+  } else {
+    ramenPicAll.style.display = "none";
+    ramenBtn.innerHTML = `+`;
+  }
+});
