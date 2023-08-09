@@ -393,6 +393,30 @@ article .askQuestion3 .fixAnswers div {
 #app .under-banner-txt .heart img {
   width: 30px;
 }
+#app .seaPic {
+  width: 100%;
+  padding: 20px 5px;
+  display: none;
+}
+#app .seaPic .seaTitle {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#app .seaPic .seaTitle span {
+  margin-left: 10px;
+}
+#app .seaPic .seaPicAll {
+  width: 100%;
+  display: none;
+}
+#app .seaPic .seaPicAll img {
+  width: 100%;
+}
 
 @keyframes arrowMoveX {
   0% {
