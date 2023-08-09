@@ -181,3 +181,18 @@ ramenTitle.addEventListener("click", function () {
     ramenBtn.innerHTML = `+`;
   }
 });
+
+let coffeeTitle = document.querySelector(".coffeeTitle");
+let coffeePicAll = document.querySelector(".coffeePicAll");
+let coffeeTrue = false;
+let coffeeBtn = document.querySelector(".coffeeTitle span");
+coffeeTitle.addEventListener("click", function () {
+  coffeeTrue = !coffeeTrue;
+  if (coffeeTrue) {
+    coffeePicAll.style.display = "block";
+    coffeeBtn.innerHTML = `-`;
+  } else {
+    coffeePicAll.style.display = "none";
+    coffeeBtn.innerHTML = `+`;
+  }
+});

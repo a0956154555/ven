@@ -399,14 +399,20 @@ article .askQuestion3 .fixAnswers div {
   display: none;
 }
 #app .seaPic .seatotal,
-#app .seaPic .ramenTotal {
+#app .seaPic .ramenTotal,
+#app .seaPic .coffeeTotal {
   margin-bottom: 10px;
   border-bottom: 1px white solid;
 }
 #app .seaPic .seatotal .seaTitle,
 #app .seaPic .seatotal .ramenTitle,
+#app .seaPic .seatotal .coffeeTitle,
 #app .seaPic .ramenTotal .seaTitle,
-#app .seaPic .ramenTotal .ramenTitle {
+#app .seaPic .ramenTotal .ramenTitle,
+#app .seaPic .ramenTotal .coffeeTitle,
+#app .seaPic .coffeeTotal .seaTitle,
+#app .seaPic .coffeeTotal .ramenTitle,
+#app .seaPic .coffeeTotal .coffeeTitle {
   color: white;
   display: flex;
   justify-content: center;
@@ -417,21 +423,36 @@ article .askQuestion3 .fixAnswers div {
 }
 #app .seaPic .seatotal .seaTitle span,
 #app .seaPic .seatotal .ramenTitle span,
+#app .seaPic .seatotal .coffeeTitle span,
 #app .seaPic .ramenTotal .seaTitle span,
-#app .seaPic .ramenTotal .ramenTitle span {
+#app .seaPic .ramenTotal .ramenTitle span,
+#app .seaPic .ramenTotal .coffeeTitle span,
+#app .seaPic .coffeeTotal .seaTitle span,
+#app .seaPic .coffeeTotal .ramenTitle span,
+#app .seaPic .coffeeTotal .coffeeTitle span {
   margin-left: 10px;
 }
 #app .seaPic .seatotal .seaPicAll,
 #app .seaPic .seatotal .ramenPicAll,
+#app .seaPic .seatotal .coffeePicAll,
 #app .seaPic .ramenTotal .seaPicAll,
-#app .seaPic .ramenTotal .ramenPicAll {
+#app .seaPic .ramenTotal .ramenPicAll,
+#app .seaPic .ramenTotal .coffeePicAll,
+#app .seaPic .coffeeTotal .seaPicAll,
+#app .seaPic .coffeeTotal .ramenPicAll,
+#app .seaPic .coffeeTotal .coffeePicAll {
   width: 100%;
   display: none;
 }
 #app .seaPic .seatotal .seaPicAll img,
 #app .seaPic .seatotal .ramenPicAll img,
+#app .seaPic .seatotal .coffeePicAll img,
 #app .seaPic .ramenTotal .seaPicAll img,
-#app .seaPic .ramenTotal .ramenPicAll img {
+#app .seaPic .ramenTotal .ramenPicAll img,
+#app .seaPic .ramenTotal .coffeePicAll img,
+#app .seaPic .coffeeTotal .seaPicAll img,
+#app .seaPic .coffeeTotal .ramenPicAll img,
+#app .seaPic .coffeeTotal .coffeePicAll img {
   width: 100%;
 }
 
