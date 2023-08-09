@@ -479,6 +479,20 @@ article .askQuestion3 .fixAnswers div {
 #app .seaPic .coffeeTotal .coffeePicAll img {
   width: 100%;
 }
+#app .seaPic .dayOneTotal {
+  width: 100%;
+}
+#app .seaPic .dayOneTotal .dayOneTotalBox {
+  width: 100%;
+  height: 300px;
+  border: 1px white solid;
+  display: flex;
+  overflow: hidden;
+}
+#app .seaPic .dayOneTotal .dayOneTotalBox img {
+  width: 100%;
+  height: 100%;
+}
 
 @keyframes arrowMoveX {
   0% {
