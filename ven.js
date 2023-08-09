@@ -196,3 +196,16 @@ coffeeTitle.addEventListener("click", function () {
     coffeeBtn.innerHTML = `+`;
   }
 });
+
+let firstShowPic = document.querySelector(".firstShowPic");
+let threeQuestionsAll = document.querySelector(".threeQuestionsAll");
+
+firstShowPic.addEventListener("click", function () {
+  firstShowPic.style.transition = "1s";
+  firstShowPic.style.opacity = "0";
+  setTimeout(() => {
+    firstShowPic.style.display = "none";
+    threeQuestionsAll.style.display = "flex";
+    underQuestionPic.style.display = "block";
+  }, 1000);
+});
