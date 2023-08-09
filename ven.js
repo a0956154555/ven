@@ -153,36 +153,16 @@ setInterval(() => {
 }, 3000); // 每 2000 毫秒（2 秒）切換一次圖片
 
 let seaTitle = document.querySelector(".seaTitle");
-let ramenTotal = document.querySelector(".ramenTotal");
-
-let seaTrue = false;
-let ramenTrue = false;
-let seaBtn = document.querySelector(".seaTitle span");
-let ramenBtn = document.querySelector(".ramenTitle span");
 let seaPicAll = document.querySelector(".seaPicAll");
-let allTitleArr = [seaTitle, ramenTotal];
-let postTrueArr = [seaTrue, ramenTrue];
-let postBtnArr = [seaBtn, ramenBtn];
-// seaTitle.addEventListener("click", function () {
-//   seaTrue = !seaTrue;
-//   if (seaTrue) {
-//     seaPicAll.style.display = "block";
-//     seaBtn.innerHTML = `-`;
-//   } else {
-//     seaPicAll.style.display = "none";
-//     seaBtn.innerHTML = `+`;
-//   }
-// });
-
-for (let i = 0; i < allTitleArr.length; i++) {
-  allTitleArr[i].addEventListener("click", function () {
-    postTrueArr[i] = !postTrueArr[i];
-    if (postTrueArr[i]) {
-      allTitleArr[i].style.display = "block";
-      postBtnArr[i].innerHTML = `-`;
-    } else {
-      allTitleArr[i].style.display = "none";
-      postBtnArr[i].innerHTML = `+`;
-    }
-  });
-}
+let seaTrue = false;
+let seaBtn = document.querySelector(".seaTitle span");
+seaTitle.addEventListener("click", function () {
+  seaTrue = !seaTrue;
+  if (seaTrue) {
+    seaPicAll.style.display = "block";
+    seaBtn.innerHTML = `-`;
+  } else {
+    seaPicAll.style.display = "none";
+    seaBtn.innerHTML = `+`;
+  }
+});
