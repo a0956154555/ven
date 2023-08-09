@@ -4,6 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nel With Ven</title>
+    <link rel="stylesheet" href="./ven.css" />
   </head>
-  <body></body>
+  <body>
+    <article>
+      <section class="askQuestion">
+        <div class="questionOneTitle">第一題</div>
+        <div class="questionLoveMe">妳愛我嗎?</div>
+        <div class="loveMeAnswers">
+          <div class="questionOneAnswerAll">愛</div>
+          <div class="questionOneAnswerAll">很愛</div>
+          <div class="questionOneAnswerAll">非常愛</div>
+        </div>
+      </section>
+      <section class="askQuestion2">
+        <div class="questionTwoTitle">第二題</div>
+        <div class="questionMissMe">妳想我嗎?</div>
+        <div class="MissMeAnswers">
+          <div class="questionTwoAnswerAll">想</div>
+          <div class="questionTwoAnswerAll">很想</div>
+          <div class="questionTwoAnswerAll">非常想</div>
+        </div>
+      </section>
+      <section class="askQuestion3">
+        <div class="questionThreeTitle">第三題</div>
+        <div class="questionFix">我們...還有機會嗎?</div>
+        <div class="fixAnswers">
+          <div class="questionThreeAnswer">有</div>
+        </div>
+      </section>
+    </article>
+    <section class="underQuestionPic"></section>
+    <article class="about-us">
+      <div class="about-banner about-banner-first"></div>
+      <div class="about-banner"></div>
+      <div class="about-banner"></div>
+      <div class="about-banner"></div>
+      <div class="collapse">
+        <img src="./img/arrow1.png" alt="" />
+      </div>
+    </article>
+    <section id="app">
+      <section class="under-banner-txt">
+        <div
+          class="readPost"
+          :class="{'disappear':disappearTrue}"
+          @click="readPost"
+          v-if="delayNone"
+        >
+          閱讀文章
+        </div>
+
+        <div v-if="!delayNone" class="second-part">{{designerTxt}}</div>
+        <div class="heart" v-if="heartShow" @click="redLove">
+          <img
+            :src="redHeart ? './img/H03.svg' : './img/H00.png'"
+            alt=""
+            class="heartPic"
+          />
+        </div>
+      </section>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./ven2.js"></script>
+    <script src="./ven.js"></script>
+  </body>
 </html>
