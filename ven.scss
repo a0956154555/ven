@@ -390,23 +390,30 @@ article {
     width: 100%;
     padding: 20px 5px;
     display: none;
-    .seaTitle {
-      color: white;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      letter-spacing: 1px;
-      font-size: 20px;
-      margin-bottom: 20px;
-      span {
-        margin-left: 10px;
-      }
-    }
-    .seaPicAll {
-      width: 100%;
-      display: none;
-      img {
+    .seatotal,
+    .ramenTotal {
+      margin-bottom: 10px;
+      border-bottom: 1px white solid;
+      .seaTitle,
+      .ramenTitle {
+        color: white;
+        display: flex;
+        justify-content: center;
         width: 100%;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        span {
+          margin-left: 10px;
+        }
+      }
+      .seaPicAll,
+      .ramenPicAll {
+        width: 100%;
+        display: none;
+        img {
+          width: 100%;
+        }
       }
     }
   }

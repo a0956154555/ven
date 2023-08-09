@@ -87,6 +87,7 @@ for (let i = 0; i < questionTwoAnswerAll.length; i++) {
 let questionThreeTitle = document.querySelector(".questionThreeTitle");
 let questionFix = document.querySelector(".questionFix");
 let heart = document.querySelector(".heartPic");
+let seaPic = document.querySelector(".seaPic");
 
 questionThreeAnswer.addEventListener("click", function () {
   this.style.border = "1px red solid";
@@ -124,6 +125,7 @@ questionThreeAnswer.addEventListener("click", function () {
     askQuestion3.style.display = "none";
     aboutUs.style.display = "flex";
     underBannerTxt.style.display = "flex";
+    seaPic.style.display = "block";
   }, 7100);
 });
 
@@ -149,3 +151,38 @@ setInterval(() => {
     underQuestionPicNum = 0;
   }
 }, 3000); // 每 2000 毫秒（2 秒）切換一次圖片
+
+let seaTitle = document.querySelector(".seaTitle");
+let ramenTotal = document.querySelector(".ramenTotal");
+
+let seaTrue = false;
+let ramenTrue = false;
+let seaBtn = document.querySelector(".seaTitle span");
+let ramenBtn = document.querySelector(".ramenTitle span");
+let seaPicAll = document.querySelector(".seaPicAll");
+let allTitleArr = [seaTitle, ramenTotal];
+let postTrueArr = [seaTrue, ramenTrue];
+let postBtnArr = [seaBtn, ramenBtn];
+// seaTitle.addEventListener("click", function () {
+//   seaTrue = !seaTrue;
+//   if (seaTrue) {
+//     seaPicAll.style.display = "block";
+//     seaBtn.innerHTML = `-`;
+//   } else {
+//     seaPicAll.style.display = "none";
+//     seaBtn.innerHTML = `+`;
+//   }
+// });
+
+for (let i = 0; i < allTitleArr.length; i++) {
+  allTitleArr[i].addEventListener("click", function () {
+    postTrueArr[i] = !postTrueArr[i];
+    if (postTrueArr[i]) {
+      allTitleArr[i].style.display = "block";
+      postBtnArr[i].innerHTML = `-`;
+    } else {
+      allTitleArr[i].style.display = "none";
+      postBtnArr[i].innerHTML = `+`;
+    }
+  });
+}

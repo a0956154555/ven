@@ -398,7 +398,15 @@ article .askQuestion3 .fixAnswers div {
   padding: 20px 5px;
   display: none;
 }
-#app .seaPic .seaTitle {
+#app .seaPic .seatotal,
+#app .seaPic .ramenTotal {
+  margin-bottom: 10px;
+  border-bottom: 1px white solid;
+}
+#app .seaPic .seatotal .seaTitle,
+#app .seaPic .seatotal .ramenTitle,
+#app .seaPic .ramenTotal .seaTitle,
+#app .seaPic .ramenTotal .ramenTitle {
   color: white;
   display: flex;
   justify-content: center;
@@ -407,14 +415,23 @@ article .askQuestion3 .fixAnswers div {
   font-size: 20px;
   margin-bottom: 20px;
 }
-#app .seaPic .seaTitle span {
+#app .seaPic .seatotal .seaTitle span,
+#app .seaPic .seatotal .ramenTitle span,
+#app .seaPic .ramenTotal .seaTitle span,
+#app .seaPic .ramenTotal .ramenTitle span {
   margin-left: 10px;
 }
-#app .seaPic .seaPicAll {
+#app .seaPic .seatotal .seaPicAll,
+#app .seaPic .seatotal .ramenPicAll,
+#app .seaPic .ramenTotal .seaPicAll,
+#app .seaPic .ramenTotal .ramenPicAll {
   width: 100%;
   display: none;
 }
-#app .seaPic .seaPicAll img {
+#app .seaPic .seatotal .seaPicAll img,
+#app .seaPic .seatotal .ramenPicAll img,
+#app .seaPic .ramenTotal .seaPicAll img,
+#app .seaPic .ramenTotal .ramenPicAll img {
   width: 100%;
 }
 
